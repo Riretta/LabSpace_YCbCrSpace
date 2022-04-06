@@ -100,8 +100,10 @@ plt.xlabel('Cb Label')
 plt.ylabel('Cr Label')
 plt.show()
 
-
-H, xedges, yedges = np.histogram2d(ycbcr_space[:, 1], ycbcr_space[:, 2], bins=np.arange(-115,125,10))
+# lab quantization
+# H, xedges, yedges = np.histogram2d(ycbcr_space[:, 1], ycbcr_space[:, 2], bins=np.arange(-115,125,10))  
+# YCbCr quantization
+H, xedges, yedges = np.histogram2d(ycbcr_space[:, 1], ycbcr_space[:, 2], bins=np.arange(0,260,10))
 import seaborn as sns
 ax = sns.heatmap(H, linewidth=0.5, cmap="YlGnBu")
 ax.invert_yaxis()
