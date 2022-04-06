@@ -1,14 +1,15 @@
+## Generate the  prior_probs.npy and pts_in_hull.npy
 Easy code for create and visualize files in YCbCr colour space for ColourCaps project [Colourisation with capsules repo](https://github.com/Riretta/Colourisation_w_Capsules).
 - create_prior_prob.py  -> create file prior_probs.npy
 - quantization_colorspace.py -> create file pts_in_hull.npy
 
 These files are needed for the colour quantization used in [Colourisation with capsules repo](https://github.com/Riretta/Colourisation_w_Capsules) -> resources folder.
 
-Lab colour Space:
+*Lab colour Space:*
 
 <img src="colour_space.png" width=300 align=center> <img src="cmap_colour_space.png" width=300 align=center> <img src="bin_space.png" width=300 align=center>
 
-YCbCr colour Space:
+*YCbCr colour Space:*
 
 <img src="colour_space_YCBCR.png" width=300 align=center> <img src="cmap_colour_space_YCBCR.png" width=300 align=center> <img src="bin_space_YCBCR.png" width=300 align=center>
 
