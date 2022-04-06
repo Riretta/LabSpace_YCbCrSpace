@@ -14,7 +14,7 @@ These files are needed for the colour quantization used in [Colourisation with c
 <img src="colour_space_YCBCR.png" width=300 align=center> <img src="cmap_colour_space_YCBCR.png" width=300 align=center> <img src="bin_space_YCBCR.png" width=300 align=center>
 
 
-All the image in this repo are property of the Authors:
+If you use the repository for your paper, please cite us:
 
 #[Collaborative Image and Object Level Features for Image Colourisation](https://openaccess.thecvf.com/content/CVPR2021W/WiCV/papers/Pucci_Collaborative_Image_and_Object_Level_Features_for_Image_Colourisation_CVPRW_2021_paper.pdf)#
 
