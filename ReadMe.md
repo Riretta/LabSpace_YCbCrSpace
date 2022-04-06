@@ -6,12 +6,14 @@ These files are needed for the colour quantization used in [Colourisation with c
 
 Lab colour Space:
 <img src="colour_space.png" width=200 align=center>
-YCbCr colour Space:
-<img src="colour_space_YCBCR.png" width=200 align=center>                                                                                                                      
-
-Quantization of colour space:
 <img src="cmap_colour_space.png" width=300 align=center>
 <img src="bin_space.png" width=300 align=center>
+
+YCbCr colour Space:
+<img src="colour_space_YCBCR.png" width=200 align=center>
+<img src="cmap_colour_space_YCBCR.png" width=300 align=center>
+<img src="bin_space_YCBCR.png" width=300 align=center>
+
 
 All the image in this repo are property of the Authors:
 
