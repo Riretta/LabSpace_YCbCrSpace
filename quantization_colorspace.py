@@ -72,10 +72,10 @@ for i in range(255):
             # output[:, :, 1] = np.trunc(((-0.148) * input[:, :, 0]) - (0.291 * input[:, :, 1]) + (0.439 * input[:, :, 2]) + 128)
             # output[:, :, 2] = np.trunc((0.439 * input[:, :, 0]) - (0.368 * input[:, :, 1]) - (0.071 * input[:, :, 2]) + 128)
 
-            ##https://stackoverflow.com/questions/34913005/color-space-mapping-ycbcr-to-rgb
-            # output[0] = math.trunc((.299 * i) + (.587 * j) + (.114 *k))
-            # output[1] = math.trunc(((-.1687) * i) - (.3313 * j) + (.5 * k) + 128)
-            # output[2] = math.trunc((.5 * i) - (.4187 * j) - (.0813 * k) + 128)
+            #https://stackoverflow.com/questions/34913005/color-space-mapping-ycbcr-to-rgb
+            output[0] = math.trunc((.299 * i) + (.587 * j) + (.114 *k))
+            output[1] = math.trunc(((-.1687) * i) - (.3313 * j) + (.5 * k) + 128)
+            output[2] = math.trunc((.5 * i) - (.4187 * j) - (.0813 * k) + 128)
 
             colors.append((i/255.0,j/255.0,k/255.0))
             ycbcr_space.append(output)
@@ -91,13 +91,14 @@ ax.set_xlabel('L Label')
 ax.set_ylabel('a Label')
 ax.set_zlabel('b Label')
 plt.show()
-# import matplotlib.pyplot as plt
-# fig = plt.figure()
-# plt.scatter(ycbcr_space[:, 1], ycbcr_space[:, 2],c=colors)
-# plt.xlabel('Cb Label')
-# plt.ylabel('Cr Label')
-# plt.show()
-#
+
+import matplotlib.pyplot as plt
+fig = plt.figure()
+plt.scatter(ycbcr_space[:, 1], ycbcr_space[:, 2],c=colors)
+plt.xlabel('Cb Label')
+plt.ylabel('Cr Label')
+plt.show()
+
 
 H, xedges, yedges = np.histogram2d(ycbcr_space[:, 1], ycbcr_space[:, 2], bins=np.arange(-115,125,10))
 import seaborn as sns
@@ -124,6 +125,5 @@ for i in range(len(H)):
 plt.scatter(xlist,ylist)
 plt.show()
 
-print(len(xylist))
-#
-# np.save('resources/pts_in_hull_ycbcr_500.npy',np.asarray(xylist))
+print(len(xylist))  #<- bin created
+np.save('resources/pts_in_hull_ycbcr_500.npy',np.asarray(xylist))
