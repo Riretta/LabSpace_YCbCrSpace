@@ -13,8 +13,10 @@ Quantization of colour space:
 <img src="cmap_colour_space.png" width=300 align=center>
 <img src="bin_space.png" width=300 align=center>
 
-All the image in this repo are property of the Authors 
-[Collaborative Image and Object Level Features for Image Colourisation](https://openaccess.thecvf.com/content/CVPR2021W/WiCV/papers/Pucci_Collaborative_Image_and_Object_Level_Features_for_Image_Colourisation_CVPRW_2021_paper.pdf)
+All the image in this repo are property of the Authors:
+
+#[Collaborative Image and Object Level Features for Image Colourisation](https://openaccess.thecvf.com/content/CVPR2021W/WiCV/papers/Pucci_Collaborative_Image_and_Object_Level_Features_for_Image_Colourisation_CVPRW_2021_paper.pdf)#
+
 @article{pucci2021collaboration,
   title={Collaboration among Image and Object Level Features for Image Colourisation},
   author={Pucci, Rita and Micheloni, Christian and Martinel, Niki},
@@ -23,7 +25,9 @@ All the image in this repo are property of the Authors
 }
 
 and:
-[Pro-CCaps: Progressively Teaching Colourisation to Capsules](https://openaccess.thecvf.com/content/WACV2022/papers/Pucci_Pro-CCaps_Progressively_Teaching_Colourisation_to_Capsules_WACV_2022_paper.pdf)
+
+#[Pro-CCaps: Progressively Teaching Colourisation to Capsules](https://openaccess.thecvf.com/content/WACV2022/papers/Pucci_Pro-CCaps_Progressively_Teaching_Colourisation_to_Capsules_WACV_2022_paper.pdf)#
+
 @inproceedings{pucci2022pro,
   title={Pro-CCaps: Progressively Teaching Colourisation to Capsules},
   author={Pucci, Rita and Micheloni, Christian and Foresti, Gian Luca and Martinel, Niki},
