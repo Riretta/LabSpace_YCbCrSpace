@@ -73,6 +73,7 @@ for i in range(255):
             # output[:, :, 2] = np.trunc((0.439 * input[:, :, 0]) - (0.368 * input[:, :, 1]) - (0.071 * input[:, :, 2]) + 128)
 
             #https://stackoverflow.com/questions/34913005/color-space-mapping-ycbcr-to-rgb
+            #remove if you want to quantize for LAB
             output[0] = math.trunc((.299 * i) + (.587 * j) + (.114 *k))
             output[1] = math.trunc(((-.1687) * i) - (.3313 * j) + (.5 * k) + 128)
             output[2] = math.trunc((.5 * i) - (.4187 * j) - (.0813 * k) + 128)
